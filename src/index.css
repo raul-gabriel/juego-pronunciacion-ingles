@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+/*
+  Paleta de colores del proyecto.
+  Se definen como variables del tema de Tailwind v4 (@theme) para poder
+  usarlas como utilidades: bg-fondo, text-texto-principal, border-borde, etc.
+*/
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --color-fondo: #faf9f6;
+  --color-fondo-tarjeta: #ffffff;
+  --color-borde: #e2e0db;
+  --color-borde-sutil: #ececea;
+
+  --color-texto-principal: #1c1c1a;
+  --color-texto-secundario: #6b6a65;
+  --color-texto-terciario: #a3a199;
+
+  --color-acento: #1c1c1a;
+  --color-exito: #16a34a;
+  --color-advertencia: #d97706;
+  --color-error: #dc2626;
+
+  --color-grabando: #dc2626;
+  --color-procesando: #2563eb;
+
+  --color-hover-fondo: #f0efe9;
+}
+
+html {
+  background-color: var(--color-fondo);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto-principal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Quitamos el outline azul nativo y lo reemplazamos por borde simple, sin glow */
+:focus-visible {
+  outline: 1px solid var(--color-acento);
+  outline-offset: 2px;
+}
+
+#root {
+  min-height: 100vh;
+}
