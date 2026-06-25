@@ -20,6 +20,13 @@ Sin backend (por ahora) y sin librerías de pago — corre 100% en el navegador.
 - **Web Speech API** nativa del navegador para reconocimiento (`SpeechRecognition` / `webkitSpeechRecognition`) y síntesis de voz (`SpeechSynthesis`), en inglés `en-US`.
 - Todos los umbrales del juego (score para pasar un ejercicio, score para desbloquear nivel, vidas, pesos, etc) están centralizados en `src/configuracion/limites.ts` — es el único archivo que hay que tocar para ajustar la dificultad.
 
+## Screenshots
+ 
+<p align="center">
+  <img src="captura.png" alt="Pantalla de ejercicio" />
+  <img src="captura2.png" alt="Pantalla de resultado" />
+</p>
+
 ## Stack
 
 - React + TypeScript + Vite
